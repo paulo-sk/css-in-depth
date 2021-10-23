@@ -1,0 +1,32 @@
+.panel {
+    padding: 1em;
+    border-radius: 0.5em;
+    border-style: double;
+}
+
+.panel > h2 {
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.panel.large { 
+    font-size: 1.2rem;
+}
+
+:root {
+    font-size: 0.75em;
+}
+
+@media (min-widht: 800px) {
+    :root {
+        font-size: 0.875em;
+    }
+}
+
+@media (min-widht: 1200px) {
+    :root {
+        font-size: 1em;
+    }
+}

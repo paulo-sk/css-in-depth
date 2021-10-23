@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        :root{
+            box-sizing: border-box;
+            font-size: calc(1vw + .5em);
+        }
+        *,
+        ::before,
+        ::after{
+            box-sizing: inherit;
+        }
+
+        .grid{
+            max-width: 1080px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 1fr 1fr;
+            gap: .1em;
+        }
+
+        .grid > *{
+            color: white;
+            background-color: darkgray;
+            padding: 2em;
+            border-radius: .2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+        <div class="f">f</div>
+    </div>
+</body>
+</html>

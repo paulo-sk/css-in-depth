@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whombat Coffe Roasters</title>
+
+    <style>
+        .objeto-teste{
+            background-color: rgb(221, 221, 221);
+            padding: .5em;
+            text-align: center;
+            border-radius: 5px;
+        }
+        h1{
+            background-color: black;
+            font-family: serif;
+            color: #f4ffff;
+            margin-bottom: 10px;
+            padding: .5em;
+            margin-top: 0;
+        }
+        #page-title{
+            font-family: sans-serif;
+        }
+        .title{
+            font-family: monospace;
+        }
+        .nav{
+            padding-top: 10px;
+            list-style: none;
+            padding-left: 0;
+        }
+        .nav li{
+            display: inline-block;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+            background-color:  #13a4a4;
+            padding: 5px 15px; 
+            border-radius: 3px;
+        }
+        .nav a:hover{
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        .nav .featured{
+            background-color: red;
+            box-shadow: 10px 2px #6f9090;
+        }
+        .footer{
+            color: #666;
+            background-color: #ccc;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: initial;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="objeto-teste">
+        <header class="page-header">
+            <h1 id="page-title" class="title">Whombat Coffe Roasters</h1>
+        </header>
+
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/coffees">Coffees</a></li>
+                <li><a href="/brewers">Brewers</a></li>
+                <li><a href="/specials"
+                    class="featured">Specials
+                    </a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>
+            Be sure to check out
+            <a href="/specials" class="featured">our specials</a>.
+            </p>
+        </main>
+        <br>
+        <hr>
+        <footer class="footer">
+            &copy; 2016 Wombat Coffee Roasters &mdash;
+            <a href="/terms-of-use">Terms of use</a>
+           </footer>
+    </div>
+</body>
+</html>

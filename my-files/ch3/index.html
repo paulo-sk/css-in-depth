@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *,
+        ::before,
+        ::after {
+        box-sizing: border-box;   
+        }
+        :root {
+            font-size: calc(.5em + 1vw);
+            --main-color: rgb(8, 24, 252);
+            --bg-color: rgb(224, 223, 223);
+        }
+        body{
+            font-family: Helvetica, Arial, sans-serif;;
+        }
+        .container {
+            width: 90vw;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            padding: .2em;
+        }
+        .title {
+            background-color: var(--main-color);
+            color: aliceblue;
+            border-radius: .5em;
+            padding: 0.6em 2em;
+            font-size: .6rem;
+        }
+        main {
+            margin-top: 0.6em;
+            display: flex;
+            justify-content: center;
+            flex-flow: row nowrap;
+        }
+        .joinus {
+            border-radius: .4em;
+            background-color:white;
+            margin-right: 1em;
+            padding: 2em 1em;
+        }
+        .joinus p {
+            font-size: 0.7rem;
+        }
+        .sidebar{
+            border-radius: .4em;
+            background-color:white;
+            display: flex;
+            flex-flow: column;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 0 .5em;
+        }
+
+        .sidebar p {
+            font-size: .7rem;
+            font-weight: bold;
+            color: var(--main-color);
+        }
+        .sidebar .button{
+            font-size: .6rem;
+            background-color: var(--main-color);
+            border-radius: .3em;
+            color: white;
+            text-transform: uppercase;
+            padding: 1em 3em;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width: 800px ){
+            main {
+                flex-flow: column;
+            }
+            .joinus {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="title">
+            <h1>Franklin Running Club</h1>
+        </header>
+        <main>
+            <div class="joinus">
+                <h4>Come join us!</h4>
+                <p>The franklin runing club meets at 6:00pm every
+                    Thusday at the town square. Runs are three to five miles, at
+                    your own pace.
+                </p>
+            </div>
+            <div class="sidebar">
+                <p class="button">follow us on twitter</p>
+                <p class="button">like us on facebook</p>
+                <p>become a sponsor</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
